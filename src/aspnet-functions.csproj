@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Redpanda.OpenFaaS</RootNamespace>
+    <AssemblyName>Redpanda.OpenFaaS.Functions</AssemblyName>
+    <PackageId>Redpanda.OpenFaaS.Functions</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Goncalo Oliveira</Authors>
+    <Company>RedPanda Ltd</Company>
+    <Description>OpenFaaS ASPNET Functions</Description>
+    <RepositoryUrl>https://github.com/redpandaltd/faas-aspnet-functions</RepositoryUrl>
+    <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
+  </ItemGroup>
+
+</Project>
