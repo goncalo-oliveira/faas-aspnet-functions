@@ -5,7 +5,7 @@
     <RootNamespace>Redpanda.OpenFaaS</RootNamespace>
     <AssemblyName>Redpanda.OpenFaaS.Functions</AssemblyName>
     <PackageId>Redpanda.OpenFaaS.Functions</PackageId>
-    <Version>0.1.1</Version>
+    <Version>1.0</Version>
     <Authors>Goncalo Oliveira</Authors>
     <Company>RedPanda Ltd</Company>
     <Description>OpenFaaS ASPNET Functions</Description>
