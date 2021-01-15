@@ -2,10 +2,10 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace Redpanda.OpenFaaS
+namespace OpenFaaS
 {
     /// <summary>
-    /// A default implementation of Redpanda.OpenFaaS.IHttpFunction
+    /// A default implementation of OpenFaaS.IHttpFunction
     /// </summary>
     public abstract class HttpFunction : IHttpFunction
     {

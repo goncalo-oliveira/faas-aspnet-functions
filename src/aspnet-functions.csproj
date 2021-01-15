@@ -2,14 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <RootNamespace>Redpanda.OpenFaaS</RootNamespace>
-    <AssemblyName>Redpanda.OpenFaaS.Functions</AssemblyName>
-    <PackageId>Redpanda.OpenFaaS.Functions</PackageId>
-    <Version>1.2</Version>
+    <RootNamespace>OpenFaaS</RootNamespace>
+    <AssemblyName>OpenFaaS.Functions</AssemblyName>
+    <PackageId>OpenFaaS.Functions</PackageId>
+    <Version>1.3</Version>
     <Authors>Goncalo Oliveira</Authors>
-    <Company>RedPanda Ltd</Company>
     <Description>OpenFaaS ASPNET Functions</Description>
-    <RepositoryUrl>https://github.com/redpandaltd/faas-aspnet-functions</RepositoryUrl>
+    <RepositoryUrl>https://github.com/goncalo-oliveira/faas-aspnet-functions</RepositoryUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
   </PropertyGroup>
 

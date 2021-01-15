@@ -2,7 +2,7 @@
 
 Function handler abstracts used by the template and function implementations.
 
-Learn more about the [template](https://github.com/redpandaltd/faas-aspnet-template).
+Learn more about the [template](https://github.com/goncalo-oliveira/faas-aspnet-template).
 
 Learn more about [OpenFaas](https://github.com/openfaas/faas).
 

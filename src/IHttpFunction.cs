@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace Redpanda.OpenFaaS
+namespace OpenFaaS
 {
     /// <summary>
     /// Defines an ASPNET function

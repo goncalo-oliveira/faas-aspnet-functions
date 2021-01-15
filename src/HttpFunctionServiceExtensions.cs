@@ -1,5 +1,5 @@
 using System;
-using Redpanda.OpenFaaS;
+using OpenFaaS;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -23,7 +23,7 @@ namespace Microsoft.Extensions.DependencyInjection
         /// Adds a scoped IHttpFunction with an implementation type specified in TFunction
         /// </summary>
         /// <param name="services">The Microsoft.Extensions.DependencyInjection.IServiceCollection to add the service to</param>
-        /// <param name="configure">An action delegate to configure the provided Redpanda.OpenFaaS.HttpFunctionOptions</param>
+        /// <param name="configure">An action delegate to configure the provided OpenFaaS.HttpFunctionOptions</param>
         /// <typeparam name="TFunction">The type of the implementation to use</typeparam>
         /// <returns>The IServiceCollection so that additional calls can be chained</returns>
         public static IServiceCollection AddHttpFunction<TFunction>( this IServiceCollection services, Action<HttpFunctionOptions> configure )

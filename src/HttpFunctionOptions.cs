@@ -1,8 +1,9 @@
+using System;
 
-namespace Redpanda.OpenFaaS
+namespace OpenFaaS
 {
     /// <summary>
-    /// Function pptions
+    /// Function options
     /// </summary>
     public class HttpFunctionOptions
     {
