@@ -20,7 +20,7 @@ namespace Microsoft.AspNetCore.Http
                     return default( T );
                 }
 
-                return Newtonsoft.Json.JsonConvert.DeserializeObject<T>( json );
+                return System.Text.Json.JsonSerializer.Deserialize<T>( json );
 
                 // TODO: evaluate model annotations
                 //       maybe throw an exception for the base handler to pick up

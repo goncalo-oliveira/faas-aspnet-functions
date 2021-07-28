@@ -5,11 +5,12 @@
     <RootNamespace>OpenFaaS</RootNamespace>
     <AssemblyName>OpenFaaS.Functions</AssemblyName>
     <PackageId>OpenFaaS.Functions</PackageId>
-    <Version>1.4</Version>
+    <Version>1.5</Version>
     <Authors>Goncalo Oliveira</Authors>
     <Description>OpenFaaS ASPNET Functions</Description>
     <RepositoryUrl>https://github.com/goncalo-oliveira/faas-aspnet-functions</RepositoryUrl>
     <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+    <PackageIcon>faactory.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -18,4 +19,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="../faactory.png" Pack="true" PackagePath="/"/>
+  </ItemGroup>
+  
 </Project>

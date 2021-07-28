@@ -10,13 +10,13 @@ namespace Microsoft.Extensions.DependencyInjection
         /// </summary>
         /// <param name="services">The Microsoft.Extensions.DependencyInjection.IServiceCollection to add the service to</param>
         /// <typeparam name="TFunction">The type of the implementation to use</typeparam>
-        /// <returns>The IServiceCollection so that additional calls can be chained</returns>
-        public static IServiceCollection AddHttpFunction<TFunction>( this IServiceCollection services )
+        /// <returns>An IHttpFunctionBuilder so that additional configuration can be chained</returns>
+        public static IHttpFunctionBuilder AddHttpFunction<TFunction>( this IServiceCollection services )
             where TFunction : class, IHttpFunction
         {
             services.AddScoped<IHttpFunction, TFunction>();
 
-            return ( services );            
+            return ( new HttpFunctionBuilder( services ) );
         }
 
         /// <summary>
@@ -25,14 +25,24 @@ namespace Microsoft.Extensions.DependencyInjection
         /// <param name="services">The Microsoft.Extensions.DependencyInjection.IServiceCollection to add the service to</param>
         /// <param name="configure">An action delegate to configure the provided OpenFaaS.HttpFunctionOptions</param>
         /// <typeparam name="TFunction">The type of the implementation to use</typeparam>
-        /// <returns>The IServiceCollection so that additional calls can be chained</returns>
-        public static IServiceCollection AddHttpFunction<TFunction>( this IServiceCollection services, Action<HttpFunctionOptions> configure )
+        /// <returns>An IHttpFunctionBuilder so that additional configuration can be chained</returns>
+        public static IHttpFunctionBuilder AddHttpFunction<TFunction>( this IServiceCollection services, Action<HttpFunctionOptions> configure )
             where TFunction : class, IHttpFunction
         {
-            AddHttpFunction<TFunction>( services )
-                .Configure<HttpFunctionOptions>( configure );
+            AddHttpFunction<TFunction>( services );
 
-            return ( services );            
+            services.Configure<HttpFunctionOptions>( configure );
+
+            return ( new HttpFunctionBuilder( services ) );
+        }
+
+        /// <summary>
+        /// Retrieves an OpenFaaS.IHttpFunctionBuilder to allow further customization
+        /// </summary>
+        /// <returns>An OpenFaaS.IHttpFunctionBuilder instance</returns>
+        public static IHttpFunctionBuilder ConfigureHttpFunction( this IServiceCollection services )
+        {
+            return new HttpFunctionBuilder( services );
         }
     }
 }
