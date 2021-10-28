@@ -5,7 +5,7 @@
     <RootNamespace>OpenFaaS</RootNamespace>
     <AssemblyName>OpenFaaS.Functions</AssemblyName>
     <PackageId>OpenFaaS.Functions</PackageId>
-    <Version>1.5.1-preview-2</Version>
+    <Version>1.5.2</Version>
     <Authors>Goncalo Oliveira</Authors>
     <Description>OpenFaaS ASPNET Functions</Description>
     <RepositoryUrl>https://github.com/goncalo-oliveira/faas-aspnet-functions</RepositoryUrl>
