@@ -2,6 +2,8 @@
 
 Function handler abstracts used by the template and function implementations.
 
+> Since the release of v2.x of the template, this package is no longer used and considered deprecated. See [here](https://github.com/goncalo-oliveira/faas-aspnet-template#migrating-from-v1x) how to migrate your function if you're still using v1.x.
+
 Learn more about the [template](https://github.com/goncalo-oliveira/faas-aspnet-template).
 
 Learn more about [OpenFaas](https://github.com/openfaas/faas).
